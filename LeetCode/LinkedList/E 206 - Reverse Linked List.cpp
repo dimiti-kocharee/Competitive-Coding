@@ -29,47 +29,47 @@ public:
         cur2 is pointing to the next of cur1 so that
         head is pointing to cur1 which is then pointing to cur2
 
-        ------		------		------		------
+        ------	    ------	------	    ------
         | a0 |----->| a1 |----->| a2 |----->| a3 |----->
-        ------		------		------		------
-		 head		 cur1		 cur2
+        ------	    ------	------	    ------
+	 head	     cur1	 cur2
 
-		 Now before starting the loop first point head to NULL and then
-		 point cur1 to head as shown below
+	Now before starting the loop first point head to NULL and then
+	point cur1 to head as shown below
 
-					------		------		------		------
-		 NULL<------| a0 |<-----| a1 |		| a2 |----->| a3 |----->
-		 			------		------		------		------
-		 			 head		 cur1		 cur2
+	           ------      ------    	------      ------
+	NULL<------| a0 |<-----| a1 |		| a2 |----->| a3 |----->
+		   ------      ------		------	    ------
+		    head	cur1		 cur2
 
-		Now start the while loop till the cur2 reaches the end.
-		And inside the loop you just need to do 2 things :-
+	Now start the while loop till the cur2 reaches the end.
+	And inside the loop you just need to do 2 things :-
 
-		a.First point the head where cur1 is pointing then, point the cur1 
-		where cur2 is pointing and finally point the cur2 to its next node.
+	a.First point the head where cur1 is pointing then, point the cur1 
+	where cur2 is pointing and finally point the cur2 to its next node.
 
-					------		------		------		------
-		 NULL<------| a0 |<-----| a1 |		| a2 |----->| a3 |----->
-		 			------		------		------		------
-		 			 			 head		 cur1		 cur2
+		   ------      ------		------	    ------
+	NULL<------| a0 |<-----| a1 |		| a2 |----->| a3 |----->
+		   ------      ------		------	    ------
+		 	        head		 cur1	     cur2
 
-		b.Secondly, point the cur1 to head.
+	b.Secondly, point the cur1 to head.
 
-					------		------		------		------
-		 NULL<------| a0 |<-----| a1 |<-----| a2 |		| a3 |----->
-		 			------		------		------		------
-		 			 			 head		 cur1		 cur2
+		   ------      ------	   ------	------
+	NULL<------| a0 |<-----| a1 |<-----| a2 |	| a3 |----->
+		   ------      ------	   ------	------
+		 	        head	    cur1	 cur2
 		 
-		Now, think about it deeply till you realize that,
-		after the loop stops, the whole list is reversed except the last one.
+	Now, think about it deeply till you realize that,
+	after the loop stops, the whole list is reversed except the last one.
 
-		----------     	 ---------- 	 ----------		 ----------		------
-		| a(n-4) |<------| a(n-3) |<-----| a(n-2) |<-----| a(n-1) |		| an |----->NULL
-		---------- 		 ----------		 ----------		 ----------		------
-		 			 			    		head		    cur1 		 cur2
+	----------     	 ---------- 	 ----------	 ----------	------
+	| a(n-4) |<------| a(n-3) |<-----| a(n-2) |<-----| a(n-1) |	| an |----->NULL
+	---------- 	 ----------	 ----------	 ----------	------
+		 			   head	            cur1 		 cur2
 
-		So just before returning the reversed list i.e., cur2, just point
-		the cur2 to cur1.
+	So just before returning the reversed list i.e., cur2, just point
+	the cur2 to cur1.
 
         */
 

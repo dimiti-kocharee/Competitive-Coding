@@ -15,6 +15,8 @@ public:
         node->val = node->next->val;		//copy the value in the next node
         node->next = node->next->next;		//point to the node where the next node points
 
+
+
         /*
         After seeing other submissions, I also came across a solution which does exactly the
         same thing but in just one line i.e., what about coping the subsequent whole structure 
