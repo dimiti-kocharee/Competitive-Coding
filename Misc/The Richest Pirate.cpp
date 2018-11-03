@@ -1,3 +1,4 @@
+//Problem:- 	https://github.com/dimiti-kocharee/Competitive-Coding/blob/master/Misc/The%20Richest%20Pirate.jpg?raw=true
 #include <bits/stdc++.h> 
 using namespace std;
 
